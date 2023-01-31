@@ -36,7 +36,6 @@ const getForcast = async () => {
     try {
         const city = await getKey(TOKEN_DICTIONARY.city)
         const weather = await getWeather(city);
-        // const weather = await getWeather('mykolaiv');
 
         printWeather(weather, getIcon(weather.weather[0].icon))
         
